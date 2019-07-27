@@ -5,7 +5,6 @@ enter = gets.chomp
 user_input = nil
 computer_input = nil
 
-
 def game(x, y)
   if x == 1 && y == 2
     @c_score += 1
