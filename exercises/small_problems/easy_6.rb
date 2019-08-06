@@ -73,30 +73,136 @@
 #find_fibonacci_index_by_length(10)
 #find_fibonacci_index_by_length(10)
 
-def reverse!(array)
-  array.each do |yo|
-    array.insert(0, array.delete_at(4))
+#def reverse!(array)
+#  counter = array.size - 1
+#  array.size.times do
+#    array.insert(counter, array.shift)
+#    counter -= 1
+#  end
+# array
+#end
+#
+#list = [1,2,3,4]
+#result = reverse!(list)
+#result == [4, 3, 2, 1]
+#list == [4, 3, 2, 1]
+#puts list.object_id == result.object_id
+#
+#list = %w(a b e d c)
+#reverse!(list) == ["c", "d", "e", "b", "a"]
+#list == ["c", "d", "e", "b", "a"]
+
+#def reverse(array)
+#  new_array = []
+#  array.size.times do
+#    new_array << array.pop
+#  end
+#  puts new_array
+#end
+#
+#
+#reverse([1,2,3,4]) == [4,3,2,1]          # => true
+#reverse(%w(a b e d c)) == %w(c d e b a)  # => true
+#reverse(['abc']) == ['abc']              # => true
+#reverse([]) == []
+
+#def merge(array_1, array_2)
+#  new_array = array_1 + array_2
+#  new_array.uniq
+#end
+#puts merge([1, 3, 5], [3, 6, 9]) == [1, 3, 5, 6, 9]
+
+#def halvsies(array)
+#  array_1 = array[0...((array.size/2.0).round)]
+#  array_2 = array[(array_1.size)..(array.size)]
+#  puts array_1.to_s
+#  puts array_2.to_s
+#end
+#
+#halvsies([1, 2, 3, 4]) == [[1, 2], [3, 4]]
+#halvsies([1, 5, 2, 4, 3]) == [[1, 5, 2], [4, 3]]
+#halvsies([5]) == [[5], []]
+#halvsies([]) == [[], []]
+
+#def find_dup(array)
+#  store = []
+#  dupe = []
+#  array.each do |number|
+#    if store.include? number
+#      dupe << number
+#    else
+#     store << number
+#   end
+#  end
+#  puts dupe
+#end
+#
+#find_dup([1, 5, 3, 1])
+#find_dup([18, 9, 36, 96, 31, 19, 54, 75, 42, 15,
+#         38, 25, 97, 92, 46, 69, 91, 59, 53, 27,
+#         14, 61, 90, 81,  8, 63, 95, 99, 30, 65,
+#         78, 76, 48, 16, 93, 77, 52, 49, 37, 29,
+#         89, 10, 84,  1, 47, 68, 12, 33, 86, 60,
+#        41, 44, 83, 35, 94, 73, 98,  3, 64, 82,
+#         55, 79, 80, 21, 39, 72, 13, 50,  6, 70,
+#         85, 87, 51, 17, 66, 20, 28, 26,  2, 22,
+#        40, 23, 71, 62, 73, 32, 43, 24,  4, 56,
+#        7,  34, 57, 74, 45, 11, 88, 67,  5, 58])
+
+#def include?(array, x)
+#  if array.include? x
+#    puts true
+#  else
+#    puts false
+#  end
+#end
+#
+#include?([1,2,3,4,5], 3) == true
+#include?([1,2,3,4,5], 6) == false
+#include?([], 3) == false
+#include?([nil], nil) == true
+#include?([], nil) == false
+
+def triangle(number)
+  space_counter = number
+  star_counter = 0
+  number.times do
+    space_counter.times do print " "
+    end
+    star_counter.times do print "*"
+    end
+  puts "*"
+  space_counter -= 1
+  star_counter += 1
   end
-  puts array.to_s
 end
 
-list = [1,2,3,4]
-result = reverse!(list)
-result == [4, 3, 2, 1]
-list == [4, 3, 2, 1]
-puts list.object_id == result.object_id
+triangle(10)
 
-list = %w(a b e d c)
-reverse!(list) == ["c", "d", "e", "b", "a"]
-list == ["c", "d", "e", "b", "a"]
 
-list = ['abc']
-reverse!(list) == ["abc"]
-list == ["abc"]
 
-list = []
-reverse!(list) == []
-list == []
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
