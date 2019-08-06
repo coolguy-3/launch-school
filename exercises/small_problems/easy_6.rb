@@ -163,21 +163,21 @@
 #include?([nil], nil) == true
 #include?([], nil) == false
 
-def triangle(number)
-  space_counter = number
-  star_counter = 0
-  number.times do
-    space_counter.times do print " "
-    end
-    star_counter.times do print "*"
-    end
-  puts "*"
-  space_counter -= 1
-  star_counter += 1
-  end
-end
-
-triangle(10)
+#def triangle(number)
+#  space_counter = number
+#  star_counter = 0
+# number.times do
+#    space_counter.times do print " "
+#    end
+#    star_counter.times do print "*"
+#    end
+#  puts "*"
+#  space_counter -= 1
+# star_counter += 1
+#  end
+#end
+#
+#triangle(10)
 
 
 
